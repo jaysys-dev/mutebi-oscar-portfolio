@@ -1,0 +1,38 @@
+# =============================================================
+# Mutebi Oscar Portfolio — root .gitignore
+# JaySys STANDARD 011: configure .gitignore before staging
+# =============================================================
+
+# --- Dependencies ---
+node_modules/
+vendor/
+
+# --- Build output ---
+dist/
+build/
+.vite/
+
+# --- Python virtual environments (JaySys STANDARD 010) ---
+.venv/
+__pycache__/
+*.py[cod]
+
+# --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Logs ---
+*.log
+npm-debug.log*
+
+# --- Claude Code runtime locks (machine-specific, not project content) ---
+.claude/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.swp
+*~

@@ -1,0 +1,47 @@
+<!-- =============================================================
+     COMPONENT · Site Header / Primary Navigation
+     Shared by all 5 pages in pages/<route>/.
+
+     REFERENCE COPY ONLY. There is no build step in this project, so
+     nothing includes this file at runtime. It is the canonical record
+     of the header markup. Edits here MUST be hand-propagated to all
+     five pages, or they will silently drift.
+
+     Relative paths below are written for a page at pages/<route>/,
+     which is why they do not resolve from this folder. This file is
+     excluded from scripts/validate-links.mjs for that reason.
+
+     PER-PAGE VARIATIONS (intentional, verified 2026-08-18):
+       1. Active link: exactly one <a class="nav-link"> carries
+          is-active + ria-current="page" — the current page.
+          On pages/home/index.html the marker is is-active only.
+       2. Nav CTA: every page points the CTA at
+          ../community-desk/community-desk.html EXCEPT
+          community-desk.html itself, which uses the in-page
+          anchor #contact-form.
+     Snapshot source: pages/about/about.html
+     ============================================================= -->
+<header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="../home/index.html" class="brand" aria-label="Owebyenkulakulana home">
+        <span class="brand-mark" aria-hidden="true">OM</span>
+        <span class="brand-text">
+          <span class="brand-name">OWEBYENKULAKULANA</span>
+          <span class="brand-sub">The Development Champion</span>
+        </span>
+      </a>
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="../home/index.html" class="nav-link">Home</a></li>
+          <li><a href="../about/about.html" class="nav-link is-active" aria-current="page">About Oscar</a></li>
+          <li><a href="../projects/projects.html" class="nav-link">Mobilization Pillars</a></li>
+          <li><a href="../media/media.html" class="nav-link">News &amp; Media</a></li>
+          <li><a href="../community-desk/community-desk.html" class="nav-link">Community Desk</a></li>
+        </ul>
+        <a href="../community-desk/community-desk.html" class="btn btn-primary nav-cta">Contact Team</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>

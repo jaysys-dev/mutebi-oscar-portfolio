@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="News & Media — featured stories, development updates, press coverage, community gallery, and video highlights from Bukoto Central and the Greater Masaka region." />
+  <meta name="theme-color" content="#4B3A2F" />
+  <title>News &amp; Media — Owebyenkulakulana | Stories &amp; Updates</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="../home/index.html" class="brand" aria-label="Owebyenkulakulana home">
+        <span class="brand-mark" aria-hidden="true">OM</span>
+        <span class="brand-text">
+          <span class="brand-name">OWEBYENKULAKULANA</span>
+          <span class="brand-sub">The Development Champion</span>
+        </span>
+      </a>
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="../home/index.html" class="nav-link">Home</a></li>
+          <li><a href="../about/about.html" class="nav-link">About Oscar</a></li>
+          <li><a href="../projects/projects.html" class="nav-link">Mobilization Pillars</a></li>
+          <li><a href="../media/media.html" class="nav-link is-active" aria-current="page">News &amp; Media</a></li>
+          <li><a href="../community-desk/community-desk.html" class="nav-link">Community Desk</a></li>
+        </ul>
+        <a href="../community-desk/community-desk.html" class="btn btn-primary nav-cta">Contact Team</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="page-hero page-hero--center">
+      <div class="container narrow reveal">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../home/index.html">Home</a><span>/</span><span>News &amp; Media</span>
+        </nav>
+        <p class="eyebrow eyebrow--center">Stories From the Ground</p>
+        <h1 class="page-hero-title">News &amp; Media</h1>
+        <p class="page-hero-copy">
+          Field activities, development updates, press coverage, and community moments from across Bukoto Central and
+          the Greater Masaka region — told through the people living the change.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED STORY ===== -->
+    <section class="section--tight" style="padding-top:64px;">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow eyebrow--muted">Featured Story</p></div>
+        <article class="feature-story reveal">
+          <div class="fs-media">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=900&q=80" alt="Farmers receiving coffee seedlings" loading="lazy" />
+          </div>
+          <div class="fs-body">
+            <span class="tag tag--gold">Agriculture</span>
+            <p class="news-date">August 2, 2026</p>
+            <h3>A Season of Growth: 25,000 Coffee Seedlings Take Root</h3>
+            <p>What began as a single group request became one of the largest seedling drives the region has seen this year — reaching hundreds of households and renewing coffee gardens across the constituency. This is the story of how organised communities turn opportunity into harvest.</p>
+            <a href="#stories" class="link-arrow">Read the full story <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== DEVELOPMENT UPDATES (filterable) ===== -->
+    <section class="section" id="stories">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow eyebrow--muted">Development Updates</p>
+            <h2 class="section-title">Latest From the Field</h2>
+          </div>
+        </div>
+
+        <!-- Toolbar: filters + search -->
+        <div class="toolbar reveal" data-filter-group data-target="#updatesGrid .news-card" data-empty="#updatesEmpty">
+          <div class="chips" role="tablist" aria-label="Filter updates by category">
+            <button class="chip is-active" data-cat="all">All</button>
+            <button class="chip" data-cat="agriculture">Agriculture</button>
+            <button class="chip" data-cat="youth">Youth &amp; Women</button>
+            <button class="chip" data-cat="education">Education</button>
+            <button class="chip" data-cat="infrastructure">Infrastructure</button>
+          </div>
+          <div class="search-box">
+            <span class="search-ico" aria-hidden="true">⌕</span>
+            <label class="visually-hidden" for="mediaSearch">Search updates</label>
+            <input type="search" id="mediaSearch" data-search placeholder="Search updates…" />
+          </div>
+        </div>
+
+        <div class="cards-grid" id="updatesGrid">
+          <article class="news-card" data-category="agriculture" data-keywords="coffee seedlings farmers harvest agriculture">
+            <div class="news-media"><span class="tag tag--gold">Agriculture</span>
+              <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=700&q=80" alt="Coffee seedlings" width="700" height="440" loading="lazy" /></div>
+            <div class="news-body">
+              <p class="news-date">July 28, 2026</p>
+              <h3 class="news-title">Coffee Seedling Drive Reaches New Farmer Groups</h3>
+              <p class="news-summary">Thousands of seedlings distributed to smallholder farmers, strengthening household incomes and sustainable coffee production.</p>
+              <a href="#" class="link-arrow">Read More <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="youth" data-keywords="youth savings enterprise business empowerment women">
+            <div class="news-media"><span class="tag tag--green">Youth &amp; Women</span>
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=700&q=80" alt="Youth savings group" width="700" height="440" loading="lazy" /></div>
+            <div class="news-body">
+              <p class="news-date">July 15, 2026</p>
+              <h3 class="news-title">Youth Savings Groups Launch Enterprise Initiatives</h3>
+              <p class="news-summary">New savings and entrepreneurship programmes equip young people to build businesses and create local employment.</p>
+              <a href="#" class="link-arrow">Read More <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="education" data-keywords="school education classroom learners children">
+            <div class="news-media"><span class="tag">Education</span>
+              <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=700&q=80" alt="School classroom" width="700" height="440" loading="lazy" /></div>
+            <div class="news-body">
+              <p class="news-date">June 30, 2026</p>
+              <h3 class="news-title">School Support Programme Expands Learning Access</h3>
+              <p class="news-summary">Partnerships with local schools improve facilities and expand access to quality education across the constituency.</p>
+              <a href="#" class="link-arrow">Read More <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="youth" data-keywords="women association enterprise market savings">
+            <div class="news-media"><span class="tag tag--green">Youth &amp; Women</span>
+              <img src="https://images.unsplash.com/photo-1607827448387-a67db1383b59?auto=format&fit=crop&w=700&q=80" alt="Women's group" width="700" height="440" loading="lazy" /></div>
+            <div class="news-body">
+              <p class="news-date">June 18, 2026</p>
+              <h3 class="news-title">Women's Associations Grow Market Access</h3>
+              <p class="news-summary">Women-led groups connect to new markets and financial opportunities, lifting household incomes region-wide.</p>
+              <a href="#" class="link-arrow">Read More <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="infrastructure" data-keywords="road water infrastructure access village">
+            <div class="news-media"><span class="tag">Infrastructure</span>
+              <img src="https://images.unsplash.com/photo-1516216628859-9bccecab13ca?auto=format&fit=crop&w=700&q=80" alt="Rural road" width="700" height="440" loading="lazy" /></div>
+            <div class="news-body">
+              <p class="news-date">June 5, 2026</p>
+              <h3 class="news-title">Community Voices Shape Infrastructure Priorities</h3>
+              <p class="news-summary">Local access needs carried to decision-makers as advocacy strengthens connections between villages and opportunity.</p>
+              <a href="#" class="link-arrow">Read More <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="agriculture" data-keywords="equipment sprayers tools farmers distribution">
+            <div class="news-media"><span class="tag tag--gold">Agriculture</span>
+              <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=700&q=80" alt="Farming equipment" width="700" height="440" loading="lazy" /></div>
+            <div class="news-body">
+              <p class="news-date">May 22, 2026</p>
+              <h3 class="news-title">Crop Sprayers Delivered to Farmer Cooperatives</h3>
+              <p class="news-summary">Practical equipment reaches organised groups, helping farmers protect crops and improve yields this season.</p>
+              <a href="#" class="link-arrow">Read More <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="no-results" id="updatesEmpty">No updates match your search. Try a different keyword or category.</p>
+      </div>
+    </section>
+
+    <!-- ===== VIDEO GALLERY ===== -->
+    <section class="section intro">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--muted eyebrow--center">Watch</p>
+          <h2 class="section-title">Video Gallery</h2>
+          <p class="text-muted">Short films and highlights from community engagements and program launches.</p>
+        </div>
+        <div class="video-grid reveal">
+          <div class="video-card" tabindex="0" role="button" data-lightbox="video" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" aria-label="Play video: Seedling Distribution Day">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy" />
+            <div class="video-play"><span aria-hidden="true">▶︎</span></div>
+            <div class="video-meta"><h3>Seedling Distribution Day</h3><p>Inside a coffee seedling drive across three villages</p></div>
+          </div>
+          <div class="video-card" tabindex="0" role="button" data-lightbox="video" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" aria-label="Play video: Youth Enterprise Stories">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy" />
+            <div class="video-play"><span aria-hidden="true">▶︎</span></div>
+            <div class="video-meta"><h3>Youth Enterprise Stories</h3><p>Young entrepreneurs share how savings groups changed their path</p></div>
+          </div>
+          <div class="video-card" tabindex="0" role="button" data-lightbox="video" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" aria-label="Play video: Voices From the Community">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy" />
+            <div class="video-play"><span aria-hidden="true">▶︎</span></div>
+            <div class="video-meta"><h3>Voices From the Community</h3><p>Farmers and leaders reflect on grassroots development</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMMUNITY GALLERY ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--muted eyebrow--center">Community Gallery</p>
+          <h2 class="section-title">Faces, Places &amp; Moments</h2>
+        </div>
+        <div class="gallery reveal">
+          <figure class="gallery-item tall" tabindex="0" role="button" data-lightbox="image" data-src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&w=1000&q=80" data-alt="Community meeting">
+            <img src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&w=600&q=80" alt="Community meeting" loading="lazy" /><figcaption>Community meeting</figcaption>
+          </figure>
+          <figure class="gallery-item" tabindex="0" role="button" data-lightbox="image" data-src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&w=1000&q=80" data-alt="In the field">
+            <img src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&w=600&q=80" alt="In the field" loading="lazy" /><figcaption>Out in the field</figcaption>
+          </figure>
+          <figure class="gallery-item" tabindex="0" role="button" data-lightbox="image" data-src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" data-alt="Group engagement">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Group engagement" loading="lazy" /><figcaption>Group engagement</figcaption>
+          </figure>
+          <figure class="gallery-item" tabindex="0" role="button" data-lightbox="image" data-src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1000&q=80" data-alt="Youth gathering">
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=600&q=80" alt="Youth gathering" loading="lazy" /><figcaption>Youth gathering</figcaption>
+          </figure>
+          <figure class="gallery-item" tabindex="0" role="button" data-lightbox="image" data-src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=1000&q=80" data-alt="Savings group">
+            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=600&q=80" alt="Savings group" loading="lazy" /><figcaption>Savings group</figcaption>
+          </figure>
+          <figure class="gallery-item tall" tabindex="0" role="button" data-lightbox="image" data-src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80" data-alt="School children">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="School children" loading="lazy" /><figcaption>School visit</figcaption>
+          </figure>
+          <figure class="gallery-item" tabindex="0" role="button" data-lightbox="image" data-src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&w=1000&q=80" data-alt="Farmer portrait">
+            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=600&q=80" alt="Farmer portrait" loading="lazy" /><figcaption>A proud farmer</figcaption>
+          </figure>
+          <figure class="gallery-item" tabindex="0" role="button" data-lightbox="image" data-src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1000&q=80" data-alt="Harvest">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=600&q=80" alt="Harvest" loading="lazy" /><figcaption>Harvest season</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRESS COVERAGE ===== -->
+    <section class="section bridge">
+      <div class="container wide">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--muted eyebrow--center">Press Coverage</p>
+          <h2 class="section-title">In the News</h2>
+        </div>
+        <div class="press-list reveal">
+          <div class="press-row">
+            <span class="press-outlet">Masaka Regional News</span>
+            <span class="press-title">"Owebyenkulakulana": How one mobiliser is reshaping grassroots development</span>
+            <span class="press-date">Aug 1, 2026</span>
+          </div>
+          <div class="press-row">
+            <span class="press-outlet">The Coffee Journal</span>
+            <span class="press-title">Seedling drives renew hope for Greater Masaka's coffee farmers</span>
+            <span class="press-date">Jul 20, 2026</span>
+          </div>
+          <div class="press-row">
+            <span class="press-outlet">Youth Enterprise Weekly</span>
+            <span class="press-title">Savings groups turn young people into local employers</span>
+            <span class="press-date">Jul 4, 2026</span>
+          </div>
+          <div class="press-row">
+            <span class="press-outlet">Community Voice</span>
+            <span class="press-title">Women's associations report rising incomes across Bukoto Central</span>
+            <span class="press-date">Jun 15, 2026</span>
+          </div>
+          <div class="press-row">
+            <span class="press-outlet">Development Today</span>
+            <span class="press-title">Bringing national programs to the last household: a field report</span>
+            <span class="press-date">May 30, 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MEDIA MENTIONS ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--muted eyebrow--center">Media Mentions</p>
+          <h2 class="section-title">Recognised for Grassroots Impact</h2>
+        </div>
+        <div class="value-grid">
+          <blockquote class="value-card reveal">
+            <p style="color:var(--brown);font-weight:600;">"A rare example of development that actually reaches the villages it promises."</p>
+            <p class="text-muted" style="margin:14px 0 0;">— Masaka Regional News</p>
+          </blockquote>
+          <blockquote class="value-card reveal reveal-delay-1">
+            <p style="color:var(--brown);font-weight:600;">"Organised communities, practical inputs, measurable results — the model works."</p>
+            <p class="text-muted" style="margin:14px 0 0;">— Development Today</p>
+          </blockquote>
+          <blockquote class="value-card reveal reveal-delay-2">
+            <p style="color:var(--brown);font-weight:600;">"The youth savings movement here is quietly changing the local economy."</p>
+            <p class="text-muted" style="margin:14px 0 0;">— Youth Enterprise Weekly</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section cta-band">
+      <div class="container narrow reveal">
+        <h2 class="cta-title">Have a Story or Media Enquiry?</h2>
+        <p class="cta-copy">Journalists, partners, and community members are welcome to reach out for interviews, footage, or to share a story from the field.</p>
+        <div class="cta-actions">
+          <a href="../community-desk/community-desk.html" class="btn btn-gold">Contact the Community Desk</a>
+          <a href="../projects/projects.html" class="btn btn-outline-light">See the Programs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" aria-labelledby="footer-title">
+    <h2 id="footer-title" class="visually-hidden">Site footer</h2>
+    <div class="container footer-grid">
+      <div class="footer-col footer-col--brand">
+        <span class="brand-name footer-brand">OWEBYENKULAKULANA</span>
+        <p class="footer-about">Oscar Mutebi Francisco — The Development Champion. Advancing grassroots leadership, agricultural transformation, and community empowerment across Bukoto Central and the Greater Masaka region.</p>
+        <div class="social-row" aria-label="Social media">
+          <span class="social-dot social-dot--soon" role="img" aria-label="Facebook — coming soon">f</span>
+          <span class="social-dot social-dot--soon" role="img" aria-label="X — coming soon">X</span>
+          <span class="social-dot social-dot--soon" role="img" aria-label="Instagram — coming soon">◎</span>
+          <span class="social-dot social-dot--soon" role="img" aria-label="YouTube — coming soon">▶︎</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="../home/index.html">Home</a></li>
+          <li><a href="../about/about.html">About Oscar</a></li>
+          <li><a href="../projects/projects.html">Mobilization Pillars</a></li>
+          <li><a href="../media/media.html">News &amp; Media</a></li>
+          <li><a href="../community-desk/community-desk.html">Community Desk</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Community Programs</h3>
+        <ul class="footer-links">
+          <li><a href="../projects/projects.html">Agricultural Wealth Creation</a></li>
+          <li><a href="../projects/projects.html">Youth &amp; Women Empowerment</a></li>
+          <li><a href="../projects/projects.html">Infrastructure &amp; Education</a></li>
+          <li><a href="../projects/projects.html">Savings &amp; Enterprise</a></li>
+          <li><a href="../projects/projects.html">School Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Contact Information</h3>
+        <ul class="footer-contact">
+          <li>Bukoto Central Constituency</li>
+          <li>Greater Masaka Region, Uganda</li>
+          <li><a href="mailto:info@owebyenkulakulana.org">info@owebyenkulakulana.org</a></li>
+          <li>Phone line coming soon</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year">2026</span> Owebyenkulakulana — Oscar Mutebi Francisco. All rights reserved.</p>
+        <p class="footer-note">A community-impact initiative. Not a government or political campaign website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js" defer></script>
+</body>
+</html>
